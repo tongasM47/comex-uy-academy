@@ -7,7 +7,12 @@ export interface Podcast {
   duration?: string
 }
 
-export const podcasts: Record<string, Podcast> = {}
+export const podcasts: Record<string, Podcast> = {
+  'p02-s1': { file: 'p02-s1.m4a', duration: '15 min' },
+  'p01-s3': { file: 'p01-s3.m4a', duration: '16 min' },
+  'p01-s2': { file: 'p01-s2.m4a', duration: '15 min' },
+  'p01-s1': { file: 'p01-s1.m4a', duration: '16 min' },
+}
 
 export function podcastUrl(p: Podcast): string {
   return `${import.meta.env.BASE_URL}podcasts/${p.file}`
