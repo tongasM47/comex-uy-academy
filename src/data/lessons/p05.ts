@@ -796,6 +796,41 @@ export const p05Lessons: Subtopic[] = [
           },
         ],
       },
+      {
+        heading: "La vida de un DUA: del mensaje al archivo",
+        blocks: [
+          {
+            type: "p",
+            text: "Conviene ver el DUA no como un papel sino como un **expediente vivo** que cambia de estado. Cada estado tiene su plazo y su riesgo, y en la oficina se habla de las carpetas según el estado en que está su DUA.",
+          },
+          {
+            type: "table",
+            headers: ["Estado", "Qué pasó", "Plazo o regla"],
+            rows: [
+              ["Transmitido", "El despachante mandó el mensaje (tipo de acción `I`, inicial) con la DVA y su autoliquidación", "Indica si acepta que LUCIA corrija la liquidación: S, N o P"],
+              ["Numerado", "LUCIA validó y asignó el número NNN-AAAA-999999", "30 días corridos para pedir canal o vence"],
+              ["Pagado", "Se pagaron todos los tributos en un solo acto", "Agentes de cobranza: hasta el día hábil siguiente; DGI: 7 días hábiles"],
+              ["Con canal", "La selectividad asignó verde, naranja o rojo", "Rojo: 5 días hábiles para presentarse a la verificación"],
+              ["Cumplido", "La DNA registró el libramiento en LUCIA", "Recién ahí se puede retirar con la vía 4"],
+              ["Archivado", "Los DAE quedan en el RADE y los papeles en el RASO", "RADE 10 años; RASO 5 días hábiles; control a posteriori posible"],
+            ],
+          },
+          {
+            type: "p",
+            text: "Si en el camino hay que cambiar algo, el mensaje se reenvía con otro **tipo de acción**: `C` para una corrección, `V` para un cambio de variables y `D` para un cambio de documentación. Una declaración ya registrada se corrige por el **CAROU art. 70**, en ciertos casos con un pago de **400 UI**. Y si los tributos no se pagan, el DUA se anula pero se cobran igual las tasas de servicio (TSA, TSE y TCI).",
+          },
+          {
+            type: "callout",
+            tone: "tip",
+            title: "La autoliquidación",
+            text: "El despachante no espera a que la Aduana le diga cuánto pagar: **propone su propia liquidación** en el mensaje (incluidos los tributos internos de la DGI) y LUCIA la controla. Por eso, antes de transmitir, un buen auxiliar ya sabe cuánto tiene que dar el total de la casilla 47. En el módulo 6 vas a aprender a hacer esa cuenta.",
+          },
+          {
+            type: "eli5",
+            text: "El DUA es como un pedido de delivery con seguimiento: “recibido”, “pagado”, “en preparación”, “en camino”, “entregado”. Cada estado tiene su tiempo y, si se traba en uno, alguien en la oficina tiene que llamar para destrabarlo.",
+          },
+        ],
+      },
     ],
     eli5: [
       {
@@ -858,6 +893,10 @@ export const p05Lessons: Subtopic[] = [
       {
         question: "¿Cuál es la diferencia entre naranja y rojo?",
         answer: "Naranja es solo análisis documental; rojo es análisis documental más verificación física de la mercadería.",
+      },
+      {
+        question: "¿Qué tipos de acción puede tener un mensaje DUA?",
+        answer: "I inicial, C corrección, V cambio de variables y D cambio de documentación.",
       },
     ],
     sources: [SRC_INSTRUCTIVO, SRC_XML, SRC_CAP7, SRC_DUA_PROC, SRC_DUA_ANEXO,

@@ -1,0 +1,106 @@
+import type { DocSpecimen } from '../types'
+import { fld, IMP, AIR } from './shared'
+
+export const awb: DocSpecimen = {
+  id: 'awb',
+  title: "Guía aérea (AWB)",
+  subtitle: "Air Waybill · recibo y contrato del transporte aéreo, no negociable",
+  description:
+    "La guía aérea es el recibo de la carga, la prueba del contrato de transporte aéreo (Convenio de Montreal de 1999) y la factura del flete. A diferencia del B/L, **no es título de crédito ni es negociable**: siempre es nominativa y la carga se entrega al consignatario que figura. La **MAWB** (master) la emite la aerolínea o su agente IATA; la **HAWB** (house) la emite el consolidador a cada embarcador. El número tiene **11 dígitos**: los 3 primeros son el prefijo de la aerolínea y los 8 siguientes la serie, con el último como dígito de control. El formato estándar IATA tiene 3 originales y hoy predomina la e-AWB.",
+  scenario:
+    `${IMP.name} necesita con urgencia repuestos para la máquina que decora sus vasos. Los compra a ${AIR.shipper} (Frankfurt), **${AIR.incoterm}**, y el flete aéreo lo paga el importador. Son ${AIR.pieces} cajas de 30 kg que llegan al Aeropuerto de Carrasco. Ojo con el peso: el volumétrico manda.`,
+  sections: [
+    {
+      title: "Encabezado",
+      fields: [
+        fld(1, "Número AWB y aeropuerto de salida", `${AIR.awb} · FRA`,
+          "Prefijo de 3 dígitos de la aerolínea más 8 de serie (el último es de control) y el código IATA del aeropuerto de salida. El prefijo 000 de este modelo es ficticio.",
+          12, ["000-1234 5675 · MVD", "000-1234 567 · FRA", "LNEJ-NGB-2600871 · FRA"], 0),
+      ],
+    },
+    {
+      title: "Partes",
+      fields: [
+        fld(2, "Shipper (nombre, dirección, cuenta)", `${AIR.shipper} · ${AIR.shipperAddress}`,
+          "El embarcador. En una HAWB es el exportador; en la MAWB suele figurar el consolidador.",
+          6, [`${IMP.name} · Montevideo`, "Ejemplo Cargo GmbH · Frankfurt", "Aerolínea Ejemplo · Frankfurt"], 0),
+        fld(3, "Consignee (nombre, dirección, cuenta)", `${IMP.name} · ${IMP.address} · RUT ${IMP.rut}`,
+          "A quién se entrega la carga. Como la guía no es negociable, solo el consignatario puede retirarla. En una carta de crédito se suele consignar al banco.",
+          6, ["TO ORDER", `${AIR.shipper} · Frankfurt`, "TO BEARER"], 0),
+        fld(4, "Issuing carrier's agent", AIR.agent,
+          "El agente de carga IATA que emite la guía en nombre de la aerolínea: nombre, ciudad y código IATA.",
+          12),
+      ],
+    },
+    {
+      title: "Ruta y valores declarados",
+      fields: [
+        fld(5, "Aeropuerto de salida / ruta / destino", "FRA → MVD (vía GRU)",
+          "Aeropuertos con códigos IATA y la ruta. MVD es Carrasco.",
+          4, ["MVD → FRA", "FRA → EZE", "FRA → CGH"], 0),
+        fld(6, "To / by first carrier / vuelo y fecha", `Aerolínea Ejemplo · vuelo EJ 0000 / ${AIR.date}`,
+          "Transportistas por tramo, vuelos y fechas reservadas.",
+          4),
+        fld(7, "Moneda · WT/VAL · Other", "EUR · COLL · COLL",
+          "Moneda de los cargos y si el flete por peso o valor (WT/VAL) y los otros cargos son prepaid (PPD) o collect (COLL). En FCA el flete lo paga el comprador, así que va COLL.",
+          4, ["EUR · PPD · PPD", "USD · PPD · COLL", "EUR · FREE · FREE"], 0),
+        fld(8, "Declared value for carriage / for customs", "NVD / NCV",
+          "Valor declarado para el transporte (NVD = sin valor declarado) y para aduana (NCV = sin valor comercial declarado en la guía). Si se declara valor para el transporte, sube la responsabilidad del transportista y también el costo.",
+          6),
+        fld(9, "Amount of insurance", "NIL",
+          "Seguro contratado a través de la aerolínea. NIL si el importador contrató su propia póliza.",
+          3),
+        fld(10, "Handling information", "Notify consignee on arrival",
+          "Instrucciones de manipuleo: mercancía peligrosa, perecedera, aviso al consignatario.",
+          3),
+      ],
+    },
+    {
+      title: "Carga y tarifa",
+      fields: [
+        fld(11, "Piezas / peso bruto / kg / clase de tarifa", `${AIR.pieces} / ${AIR.grossKg} / K / Q`,
+          "Cantidad de bultos, peso bruto real, unidad (K = kilos) y clase de tarifa. El peso real acá es 3 × 30 = 90 kg.",
+          4, ["3 / 120,0 / K / Q", "90 / 3,0 / K / Q", "3 / 90,0 / L / Q"], 0),
+        fld(12, "Chargeable weight", `${AIR.chargeable} kg`,
+          "El mayor entre el peso real y el volumétrico (cm³ / 6000). Cada caja: 80 × 60 × 50 / 6000 = 40 kg; por 3 cajas, 120 kg, más que los 90 kg reales. Se cobra por 120.",
+          4, ["90,0 kg", "144,0 kg", "40,0 kg"], 0),
+        fld(13, "Rate / charge / total", `EUR ${AIR.rate} por kg · EUR ${AIR.weightCharge}`,
+          "Tarifa por kilo facturable y el total del flete por peso: 120 × 4,20 = 504.",
+          4, ["EUR 4,20 por kg · EUR 378,00", "EUR 4,20 por kg · EUR 604,00", "EUR 5,60 por kg · EUR 504,00"], 0),
+        fld(14, "Nature and quantity of goods", `${AIR.goods} · ${AIR.dims}`,
+          "Descripción de la mercadería con dimensiones y volumen. Con las dimensiones cualquiera puede recalcular el peso volumétrico.",
+          12),
+      ],
+    },
+    {
+      title: "Otros cargos, totales y firmas",
+      fields: [
+        fld(15, "Other charges", "AWA (emisión de guía) · FSC (combustible) · SSC (seguridad)",
+          "Cargos adicionales con su código: emisión de la guía, recargo por combustible, recargo de seguridad.",
+          6),
+        fld(16, "Totales prepaid / collect", "Prepaid: — · Collect: flete por peso más otros cargos",
+          "Suma de lo que se pagó en origen y de lo que se cobra en destino.",
+          6),
+        fld(17, "Firma del shipper o su agente", "Ejemplo Maschinenbau GmbH · no contiene mercancía peligrosa",
+          "El embarcador certifica que los datos son correctos y declara si hay mercancía peligrosa.",
+          6),
+        fld(18, "Executed on (date) at (place)", `${AIR.date} · Frankfurt · firma del transportista emisor`,
+          "Fecha y lugar de emisión y firma del transportista o su agente.",
+          6, ["14/09/2026 · Montevideo · firma del consignatario", "Sin fecha · Frankfurt", "15/09/2026 · São Paulo · firma del shipper"], 0),
+      ],
+    },
+  ],
+  notes: [
+    "Calculá siempre el **peso volumétrico** antes de cotizar aéreo: una carga liviana y voluminosa puede salir mucho más cara de lo que parece.",
+    "El divisor IATA estándar es **6000** (1 m³ = 167 kg); algunos couriers usan 5000.",
+    "Como la AWB **no es negociable**, el pago por carta de crédito con transporte aéreo suele consignar la guía al banco.",
+    "Para el valor en aduana, el flete aéreo y el seguro se suman al precio FCA para llegar al CIF, igual que en marítimo.",
+    "En Carrasco la carga entra por la Terminal de Cargas del Uruguay (TCU), bajo el régimen de aeropuerto libre.",
+    "Con carga consolidada, el despachante trabaja con la HAWB, pero la carga llega manifestada bajo la MAWB de la aerolínea.",
+  ],
+  sources: [
+    { title: "Maersk, chargeable weight en carga aérea", url: "https://ewscpcd.maersk.com/logistics-explained/transportation-and-freight/2025/03/10/air-cargo-chargeable-weight" },
+    { title: "iContainers, cálculo de cargos del transporte aéreo", url: "https://www.icontainers.com/es/ayuda/como-calcular-los-cargos-del-transporte-aereo/" },
+    { title: "Mundo Marítimo, Aeropuerto de Carrasco y carga farmacéutica", url: "https://mundomaritimo.cl/noticias/aeropuerto-de-carrasco-uruguay-sector-farmaceutico-lidera-el-desarrollo-en-la-terminal-de-cargas" },
+  ],
+}

@@ -1,0 +1,33 @@
+import type { Flashcard } from '../types'
+
+export const p10Flashcards: Flashcard[] = [
+  { id: "f-p10-001", moduleId: "p10", subtopicId: "p10-s1", front: "¿Qué es un tratado según la Convención de Viena de 1969?", back: "Un acuerdo internacional celebrado por escrito entre Estados y regido por el derecho internacional, cualquiera sea su nombre (art. 2.1.a)." },
+  { id: "f-p10-002", moduleId: "p10", subtopicId: "p10-s1", front: "Pacta sunt servanda", back: "Todo tratado en vigor obliga a las partes y debe cumplirse de buena fe (art. 26 CVDT)." },
+  { id: "f-p10-003", moduleId: "p10", subtopicId: "p10-s1", front: "Art. 27 de la Convención de Viena", back: "Un Estado no puede invocar su derecho interno para justificar que no cumple un tratado." },
+  { id: "f-p10-004", moduleId: "p10", subtopicId: "p10-s1", front: "Art. 168 numeral 20 de la Constitución", back: "El Presidente, con el ministro o ministros respectivos o el Consejo de Ministros, concluye y suscribe tratados; necesita aprobación legislativa para ratificarlos." },
+  { id: "f-p10-005", moduleId: "p10", subtopicId: "p10-s1", front: "Art. 85 numeral 7 de la Constitución", back: "La Asamblea General aprueba o reprueba los tratados por mayoría absoluta del total de componentes de cada Cámara." },
+  { id: "f-p10-006", moduleId: "p10", subtopicId: "p10-s1", front: "Firma vs. ratificación", back: "La firma la hace el Ejecutivo; la ratificación es el consentimiento definitivo, que en Uruguay se emite después de la ley aprobatoria del Parlamento." },
+  { id: "f-p10-007", moduleId: "p10", subtopicId: "p10-s1", front: "Reserva", back: "Declaración unilateral que excluye o modifica para un Estado ciertos efectos del tratado; no procede si el tratado la prohíbe o si es incompatible con su objeto y fin." },
+  { id: "f-p10-008", moduleId: "p10", subtopicId: "p10-s1", front: "Aplicación provisional (art. 25 CVDT)", back: "Aplicar un tratado total o parcialmente antes de su entrada en vigor, si el tratado lo prevé o las partes lo acuerdan. Ejemplo: iTA MERCOSUR–UE desde el 1/5/2026." },
+  { id: "f-p10-009", moduleId: "p10", subtopicId: "p10-s2", front: "Etapas de integración (Balassa)", back: "Preferencias, zona de libre comercio, unión aduanera, mercado común, unión económica (y monetaria), integración total." },
+  { id: "f-p10-010", moduleId: "p10", subtopicId: "p10-s2", front: "Unión aduanera imperfecta", back: "El MERCOSUR: tiene AEC pero con listas de excepciones nacionales, regímenes especiales y sectores fuera (automotor, azúcar)." },
+  { id: "f-p10-011", moduleId: "p10", subtopicId: "p10-s2", front: "Órganos decisorios del MERCOSUR y sus normas", back: "CMC → Decisiones; GMC → Resoluciones; CCM → Directivas." },
+  { id: "f-p10-012", moduleId: "p10", subtopicId: "p10-s2", front: "Protocolo de Olivos (2002)", back: "Sistema actual de solución de controversias del MERCOSUR; creó el Tribunal Permanente de Revisión, con sede en Asunción." },
+  { id: "f-p10-013", moduleId: "p10", subtopicId: "p10-s2", front: "Protocolo de Ushuaia (1998)", back: "Cláusula democrática del MERCOSUR; base de las suspensiones de Paraguay (2012) y Venezuela (2016/2017)." },
+  { id: "f-p10-014", moduleId: "p10", subtopicId: "p10-s2", front: "Decisión CMC 32/00", back: "Compromiso del MERCOSUR de negociar en conjunto acuerdos comerciales con preferencias arancelarias frente a terceros." },
+  { id: "f-p10-015", moduleId: "p10", subtopicId: "p10-s2", front: "MERCOSUR–Singapur", back: "TLC firmado el 7/12/2023; vigente para Uruguay desde el 1/3/2026." },
+  { id: "f-p10-016", moduleId: "p10", subtopicId: "p10-s2", front: "MERCOSUR–EFTA (oct-2026)", back: "Firmado el 16/09/2025; ratificado por Uruguay en junio de 2026; sin vigencia confirmada." },
+  { id: "f-p10-017", moduleId: "p10", subtopicId: "p10-s2", front: "Uruguay y el CPTPP (2026)", back: "En noviembre de 2025 se decidió iniciar el proceso de adhesión; hay un Grupo de Trabajo de Adhesión en curso." },
+  { id: "f-p10-018", moduleId: "p10", subtopicId: "p10-s2", front: "PPT uruguaya del MERCOSUR", back: "Uruguay asumió la Presidencia Pro Tempore el 30/06/2026, de manos de Paraguay." },
+  { id: "f-p10-019", moduleId: "p10", subtopicId: "p10-s3", front: "ACE 18", back: "Acuerdo de Complementación Económica N.º 18 de ALADI (29/11/1991): protocoliza el programa de liberación del MERCOSUR. Figura en el certificado de origen MERCOSUR." },
+  { id: "f-p10-020", moduleId: "p10", subtopicId: "p10-s3", front: "ACE vs. AEC", back: "ACE = Acuerdo de Complementación Económica (un acuerdo). AEC = Arancel Externo Común (un arancel). \"AEC 18\" no existe." },
+  { id: "f-p10-021", moduleId: "p10", subtopicId: "p10-s3", front: "ACE 35, 60 y 73", back: "ACE 35 = MERCOSUR–Chile; ACE 60 = TLC Uruguay–México (2004); ACE 73 = ALC Uruguay–Chile (2018)." },
+  { id: "f-p10-022", moduleId: "p10", subtopicId: "p10-s3", front: "PAR, AAR y AAP", back: "PAR: rebaja porcentual entre todos; AAR: acuerdos de todos; AAP: acuerdos de algunos, como los ACE." },
+  { id: "f-p10-023", moduleId: "p10", subtopicId: "p10-s3", front: "Tratado de Montevideo 1980", back: "Crea la ALADI (12/08/1980), con sede en Montevideo y 13 miembros; reemplazó a la ALALC." },
+  { id: "f-p10-024", moduleId: "p10", subtopicId: "p10-s4", front: "De la CEE a la UE", back: "Roma 1957 crea la CEE; Maastricht 1992 crea la UE y la CEE pasa a ser CE; Lisboa 2009: la UE sustituye a la CE." },
+  { id: "f-p10-025", moduleId: "p10", subtopicId: "p10-s4", front: "EMPA vs. iTA", back: "EMPA: acuerdo de asociación mixto (requiere los 27 Estados). iTA: acuerdo comercial interino solo-UE, en aplicación provisional desde el 1/5/2026." },
+  { id: "f-p10-026", moduleId: "p10", subtopicId: "p10-s4", front: "Cronología MERCOSUR–UE clave", back: "Conclusión política 6/12/2024 (Montevideo); firma 17/01/2026 (Asunción); Ley 20.462 en Uruguay; aplicación provisional 1/5/2026." },
+  { id: "f-p10-027", moduleId: "p10", subtopicId: "p10-s4", front: "TJUE y el acuerdo con el MERCOSUR", back: "El Parlamento Europeo pidió un dictamen el 21/01/2026 (pendiente). El 29/09/2026 el TJUE rechazó las cautelares de Polonia (C-460/26 R)." },
+  { id: "f-p10-028", moduleId: "p10", subtopicId: "p10-s4", front: "Cuotas de carne UE–MERCOSUR", back: "Nueva cuota de 99.000 t con 7,5% intracuota escalonada en 5 años; la cuota Hilton pasa a 0%. En Uruguay: primero llegado, primero servido, con certificados de INAC." },
+  { id: "f-p10-029", moduleId: "p10", subtopicId: "p10-s4", front: "SGP de la UE y Uruguay", back: "Régimen unilateral de preferencias; Uruguay dejó de ser beneficiario el 1/01/2014 por su nivel de ingreso." }
+]

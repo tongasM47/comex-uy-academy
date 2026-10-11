@@ -1,0 +1,31 @@
+import type { Flashcard } from '../types'
+
+export const p12Flashcards: Flashcard[] = [
+  { id: "f-p12-001", moduleId: "p12", subtopicId: "p12-s1", front: "TEU", back: "Twenty-foot Equivalent Unit: un 20' = 1 TEU; un 40' (DV o HC) = 2 TEU. Mide largo, no altura." },
+  { id: "f-p12-002", moduleId: "p12", subtopicId: "p12-s1", front: "Volumen aprox. de los contenedores secos", back: "20' ~33 m³; 40' ~67-68 m³; 40' HC ~76 m³ (referencias; confirmar con la naviera)." },
+  { id: "f-p12-003", moduleId: "p12", subtopicId: "p12-s1", front: "FCL vs. LCL", back: "FCL: contenedor completo para un cliente. LCL: carga consolidada de varios clientes, cobrada por W/M." },
+  { id: "f-p12-004", moduleId: "p12", subtopicId: "p12-s1", front: "W/M", back: "Weight or measure: en LCL se cobra el mayor entre toneladas y m³ (1 t = 1 m³)." },
+  { id: "f-p12-005", moduleId: "p12", subtopicId: "p12-s1", front: "Peso volumétrico aéreo", back: "(L × A × H en cm) ÷ 6000; 1 m³ ≈ 167 kg. Algunos couriers: ÷ 5000." },
+  { id: "f-p12-006", moduleId: "p12", subtopicId: "p12-s1", front: "Chargeable weight", back: "Peso facturable aéreo: el mayor entre el peso bruto real y el volumétrico." },
+  { id: "f-p12-007", moduleId: "p12", subtopicId: "p12-s1", front: "MBL vs. HBL", back: "MBL: lo emite la naviera al consolidador. HBL: lo emite el forwarder o NVOCC a cada cliente." },
+  { id: "f-p12-008", moduleId: "p12", subtopicId: "p12-s1", front: "BAF / CAF / THC", back: "BAF: combustible. CAF: variación cambiaria. THC: manipulación del contenedor en la terminal." },
+  { id: "f-p12-009", moduleId: "p12", subtopicId: "p12-s1", front: "Demurrage vs. detention", back: "Demurrage: contenedor lleno en terminal pasado el free time. Detention: contenedor fuera de terminal más tiempo del pactado." },
+  { id: "f-p12-010", moduleId: "p12", subtopicId: "p12-s1", front: "ICC (A), (B), (C)", back: "A: todo riesgo con exclusiones. B: riesgos nombrados intermedios. C: riesgos nombrados mínimos." },
+  { id: "f-p12-011", moduleId: "p12", subtopicId: "p12-s1", front: "VGM", back: "Verified Gross Mass: peso bruto verificado del contenedor exigido por SOLAS antes de embarcar." },
+  { id: "f-p12-012", moduleId: "p12", subtopicId: "p12-s1", front: "TCP", back: "Terminal Cuenca del Plata, terminal de contenedores del Puerto de Montevideo: 80% Katoen Natie, 20% ANP." },
+  { id: "f-p12-013", moduleId: "p12", subtopicId: "p12-s1", front: "Carga aérea en Uruguay", back: "Aeropuerto de Carrasco, Terminal de Cargas del Uruguay (TCU), régimen MVD Free Airport." },
+  { id: "f-p12-014", moduleId: "p12", subtopicId: "p12-s2", front: "CAROU art. 16", back: "Requisitos del despachante persona física: domicilio, mayoría de edad, secundaria, examen ante tribunal de tres, antecedentes limpios, no concurso y estar al día con DGI, BPS y DNA." },
+  { id: "f-p12-015", moduleId: "p12", subtopicId: "p12-s2", front: "Habilitación del despachante", back: "La otorga el MEF, con inscripción en el Registro de Despachantes (art. 23 CAROU)." },
+  { id: "f-p12-016", moduleId: "p12", subtopicId: "p12-s2", front: "Garantía del despachante", back: "Base USD 15.000 a la orden de la DNA; hasta USD 70.000 según el volumen despachado; se actualiza cada 3 años." },
+  { id: "f-p12-017", moduleId: "p12", subtopicId: "p12-s2", front: "Registro de empleados de despachante", back: "Lo inicia el despachante con nota firmada, cédula del empleado y planilla del MTSS; gratuito; vía GEX o Mesa de Entrada de la DNA." },
+  { id: "f-p12-018", moduleId: "p12", subtopicId: "p12-s2", front: "Límites del empleado autorizado", back: "No firma el DUA ni actas, no hace autorrevisiones ni acuerdos de pago, no cobra devoluciones (Decreto 96/015, art. 7)." },
+  { id: "f-p12-019", moduleId: "p12", subtopicId: "p12-s2", front: "Decreto 913/986", back: "Categorías de empleados de despachantes: de cadete (1) a gerente (10), pasando por auxiliares, oficiales técnicos y encargados." },
+  { id: "f-p12-020", moduleId: "p12", subtopicId: "p12-s2", front: "ADAU", back: "Asociación de Despachantes de Aduana del Uruguay, la gremial del sector." },
+  { id: "f-p12-021", moduleId: "p12", subtopicId: "p12-s2", front: "LUCIA, VUCE y GEX", back: "LUCIA: sistema aduanero de la DNA. VUCE: ventanilla única de permisos y certificados. GEX: expediente electrónico." },
+  { id: "f-p12-022", moduleId: "p12", subtopicId: "p12-s3", front: "Perfil del CV (3-4 líneas)", back: "Quién sos, qué experiencia traés traducida al comex, qué estudiás y qué puesto buscás." },
+  { id: "f-p12-023", moduleId: "p12", subtopicId: "p12-s3", front: "Método STAR", back: "Situación, Tarea, Acción, Resultado: la estructura para responder preguntas conductuales." },
+  { id: "f-p12-024", moduleId: "p12", subtopicId: "p12-s3", front: "Pitch de 60 segundos", back: "El mensaje del perfil del CV dicho en voz alta, ensayado para que suene natural." },
+  { id: "f-p12-025", moduleId: "p12", subtopicId: "p12-s3", front: "Carta de presentación en 4 partes", back: "Puesto y empresa; logros traducidos; formación y disponibilidad; cierre con propuesta de entrevista." },
+  { id: "f-p12-026", moduleId: "p12", subtopicId: "p12-s3", front: "Regla de la jerga", back: "Si un reclutador fuera de la Armada no entiende una sigla o grado, hay que traducirlo o sacarlo." },
+  { id: "f-p12-027", moduleId: "p12", subtopicId: "p12-s3", front: "Primeras puertas para un perfil naval", back: "Agencias marítimas y forwarders; después estudios de despachante y dptos. de comex." }
+]

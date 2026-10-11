@@ -379,6 +379,25 @@ export const p10Lessons: Subtopic[] = [
           { type: "example", title: "Exportar lácteos a Chile", text: "Una cooperativa de Florida exporta queso a Santiago. El certificado tiene que invocar el acuerdo que el importador chileno va a usar para pedir la preferencia (por ejemplo, el **ACE 35** o el **ACE 73**), con la clasificación y la norma de origen correctas. Si el certificado dice un acuerdo y el importador declara otro, la aduana chilena puede negar la preferencia." },
           { type: "callout", tone: "warn", title: "Plazos del certificado", text: "La regla general de validez de 180 días y los plazos de emisión respecto del embarque varían según el acuerdo. Confirmalos con la entidad emisora o en el texto del ACE antes de embarcar." }
         ]
+      },
+      {
+        heading: "Del destino al acuerdo: el mapa que usás todos los días",
+        blocks: [
+          { type: "p", text: "En una oficina de comex la pregunta no es “¿qué es la ALADI?”, sino “**mando esto a tal país: ¿qué acuerdo invoco?**”. La respuesta sale de cruzar el destino con el mapa de acuerdos vigentes de Uruguay. Esta tabla resume los latinoamericanos, que son los que pasan por ALADI (estado a octubre de 2026):" },
+          { type: "table", headers: ["Destino", "Acuerdo a invocar", "Vía"], rows: [
+            ["Argentina, Brasil, Paraguay", "MERCOSUR (**ACE 18**)", "Bloque"],
+            ["Chile", "ACE 35 y **ALC Uruguay–Chile (ACE 73)**", "Bloque + bilateral"],
+            ["México", "**TLC Uruguay–México (ACE 60)**; ACE 55 para automotor", "Bilateral"],
+            ["Perú", "ACE 58", "Bloque"],
+            ["Colombia", "ACE 72", "Bloque"],
+            ["Ecuador, Venezuela", "ACE 59", "Bloque"],
+            ["Bolivia", "ACE 36 (en transición por su adhesión al MERCOSUR)", "Bloque"],
+            ["Cuba", "ACE 62", "Bloque"]
+          ], caption: "Fuente: mapa de acuerdos de la investigación (MEF y ALADI)" },
+          { type: "eli5", text: "Pensá en un llavero con muchas llaves, una por cada puerta (país). El certificado de origen es decirle al portero **qué llave estás usando**. Si mostrás la llave de Chile en la puerta de Perú, no abre, aunque la llave sea buena." },
+          { type: "example", title: "Gin uruguayo a México", text: "Una destilería de Canelones quiere vender gin a un distribuidor de Guadalajara. México no es del MERCOSUR, pero Uruguay tiene un TLC bilateral con México: el **ACE 60**, vigente desde el 15/07/2004. El certificado de origen tiene que invocar el ACE 60 y la norma de origen que cumple el producto. Si en cambio invocara un acuerdo MERCOSUR–México como el ACE 54 (que es un acuerdo marco), no estaría usando la llave correcta para pedir la preferencia." },
+          { type: "callout", tone: "tip", title: "Cómo se pregunta en una entrevista", text: "Te pueden tirar un destino al azar: “exportamos a Colombia, ¿qué ponemos en el certificado?”. Respuesta modelo: “El ACE 72, MERCOSUR–Colombia, con la norma de origen que cumple el producto; el certificado lo emite una entidad habilitada”. Practicá con la tabla hasta que te salga sin pensar." }
+        ]
       }
     ],
     eli5: [

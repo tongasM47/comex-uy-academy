@@ -1,0 +1,32 @@
+import type { Flashcard } from '../types'
+
+export const p11Flashcards: Flashcard[] = [
+  { id: "f-p11-001", moduleId: "p11", subtopicId: "p11-s1", front: "Escalera de riesgo para el exportador", back: "Anticipado → CC confirmada → CC no confirmada → cobranza D/P → cobranza D/A → cuenta abierta. Para el importador, al revés." },
+  { id: "f-p11-002", moduleId: "p11", subtopicId: "p11-s1", front: "Cuenta abierta", back: "El exportador envía mercadería y documentos y el importador paga después por transferencia. Máximo riesgo para el exportador." },
+  { id: "f-p11-003", moduleId: "p11", subtopicId: "p11-s1", front: "Libertad cambiaria en Uruguay", back: "No hay controles de cambio: se cobra y paga en cualquier moneda, sin obligación de ingresar divisas. Sí hay controles de prevención de lavado (Ley 19.574)." },
+  { id: "f-p11-004", moduleId: "p11", subtopicId: "p11-s1", front: "URDG 758", back: "Reglas de la ICC para garantías a primer requerimiento." },
+  { id: "f-p11-005", moduleId: "p11", subtopicId: "p11-s1", front: "ISP98", back: "Reglas de la ICC para cartas de crédito stand-by (que también pueden sujetarse a UCP 600)." },
+  { id: "f-p11-006", moduleId: "p11", subtopicId: "p11-s1", front: "Prefinanciación de exportaciones", back: "Crédito en dólares contra contrato, orden de compra o carta de crédito, para producir antes de cobrar." },
+  { id: "f-p11-007", moduleId: "p11", subtopicId: "p11-s2", front: "UCP 600", back: "Reglas y Usos Uniformes de la ICC para créditos documentarios; revisión 2007, vigentes desde el 1/07/2007, 39 artículos." },
+  { id: "f-p11-008", moduleId: "p11", subtopicId: "p11-s2", front: "Presentación conforme", back: "Documentos que cumplen los términos del crédito, la UCP aplicable y la práctica bancaria estándar (ISBP)." },
+  { id: "f-p11-009", moduleId: "p11", subtopicId: "p11-s2", front: "Honrar (UCP 600)", back: "Pagar a la vista, asumir un pago diferido y pagar al vencimiento, o aceptar una letra y pagarla al vencimiento." },
+  { id: "f-p11-010", moduleId: "p11", subtopicId: "p11-s2", front: "Art. 14: plazos", back: "El banco examina en hasta 5 días hábiles bancarios; los documentos de transporte se presentan dentro de 21 días del embarque y antes del vencimiento." },
+  { id: "f-p11-011", moduleId: "p11", subtopicId: "p11-s2", front: "Art. 30: tolerancias", back: "\"About\" = ±10% en monto, cantidad o precio. Sin unidades: ±5% en cantidad sin exceder el monto." },
+  { id: "f-p11-012", moduleId: "p11", subtopicId: "p11-s2", front: "Art. 16: rechazo", back: "Un único aviso con todas las discrepancias en 5 días hábiles; si no, el banco pierde el derecho a rechazar." },
+  { id: "f-p11-013", moduleId: "p11", subtopicId: "p11-s2", front: "Crédito confirmado", back: "Un segundo banco, normalmente en el país del exportador, suma su propio compromiso; cubre el riesgo del banco emisor y el riesgo país." },
+  { id: "f-p11-014", moduleId: "p11", subtopicId: "p11-s2", front: "Banco avisador", back: "Notifica el crédito al beneficiario y verifica su autenticidad aparente; no se compromete a pagar (art. 9)." },
+  { id: "f-p11-015", moduleId: "p11", subtopicId: "p11-s2", front: "Cláusula roja", back: "Permite al beneficiario recibir un anticipo antes del embarque." },
+  { id: "f-p11-016", moduleId: "p11", subtopicId: "p11-s2", front: "MT700 / MT707 / MT734", back: "Emisión / enmienda / aviso de rechazo de una carta de crédito." },
+  { id: "f-p11-017", moduleId: "p11", subtopicId: "p11-s2", front: "Discrepancias más frecuentes", back: "Presentación o embarque tardío, descripción de factura distinta, montos fuera de tolerancia, B/L sucio, documentos inconsistentes, seguro insuficiente." },
+  { id: "f-p11-018", moduleId: "p11", subtopicId: "p11-s3", front: "URC 522", back: "Reglas Uniformes de la ICC para cobranzas; revisión 1995, en vigor desde el 1/01/1996." },
+  { id: "f-p11-019", moduleId: "p11", subtopicId: "p11-s3", front: "D/P vs. D/A", back: "D/P: documentos contra pago (a la vista). D/A: documentos contra aceptación de una letra a plazo." },
+  { id: "f-p11-020", moduleId: "p11", subtopicId: "p11-s3", front: "Partes de la cobranza", back: "Cedente (exportador), banco remitente, banco cobrador, banco presentador y girado (importador)." },
+  { id: "f-p11-021", moduleId: "p11", subtopicId: "p11-s3", front: "Rol del banco en la cobranza", back: "Mandatario: no examina el contenido de los documentos ni garantiza el pago." },
+  { id: "f-p11-022", moduleId: "p11", subtopicId: "p11-s3", front: "Protesto", back: "Constancia formal del impago de una letra, que facilita el reclamo posterior; se hace si la instrucción lo prevé." },
+  { id: "f-p11-023", moduleId: "p11", subtopicId: "p11-s4", front: "OUR / SHA / BEN", back: "OUR: paga todo el ordenante. SHA: cada uno paga los de su banco. BEN: paga todo el beneficiario." },
+  { id: "f-p11-024", moduleId: "p11", subtopicId: "p11-s4", front: "MT103 → pacs.008", back: "Desde el 22/11/2025 terminó la coexistencia MT/MX para pagos transfronterizos; el equivalente del MT103 es el pacs.008." },
+  { id: "f-p11-025", moduleId: "p11", subtopicId: "p11-s4", front: "Datos de una transferencia internacional", back: "Beneficiario y dirección, cuenta o IBAN, BIC/SWIFT, intermediario si aplica, moneda, monto, concepto y opción de gastos." },
+  { id: "f-p11-026", moduleId: "p11", subtopicId: "p11-s4", front: "Letra de cambio", back: "Título por el que el librador ordena al librado pagar una suma al tomador, a la vista o a plazo." },
+  { id: "f-p11-027", moduleId: "p11", subtopicId: "p11-s4", front: "Forfaiting", back: "Venta con descuento de una letra (típicamente avalada por un banco) para cobrar antes." },
+  { id: "f-p11-028", moduleId: "p11", subtopicId: "p11-s4", front: "Banco corresponsal", back: "Banco intermediario por el que pasa una transferencia cuando los bancos no tienen relación directa; en USD, normalmente en Nueva York." }
+]
