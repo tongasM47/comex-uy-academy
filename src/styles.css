@@ -357,7 +357,7 @@ label.field { display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem
   align-items: end;
   margin-bottom: 26px;
 }
-.hero h1 { max-width: 18ch; }
+.hero h1 { max-width: 24ch; }
 .hero .lede { margin-top: 10px; }
 @media (max-width: 700px) { .hero { grid-template-columns: 1fr; } }
 
