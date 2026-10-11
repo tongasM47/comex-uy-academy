@@ -268,7 +268,7 @@ export const p05Lessons: Subtopic[] = [
             type: "callout",
             tone: "info",
             title: "Compras por internet: otro circuito",
-            text: "Lo que viene por courier sigue un régimen propio (Ley 20.446 y Decreto 50/2026, con franquicia de US$ 800 por persona y año desde el 01/05/2026). Un envío de más de US$ 800 o de más de 20 kg requiere despacho formal con despachante, es decir, esta secuencia.",
+            text: "Lo que viene por courier sigue un régimen propio (Ley 20.446 y Decreto 50/026, con franquicia de US$ 800 y hasta 3 envíos por persona y año civil desde el 01/05/2026). Un envío de más de US$ 800 o de más de 20 kg requiere despacho formal con despachante, es decir, esta secuencia.",
           },
         ],
       },

@@ -44,9 +44,9 @@ export const p06Questions: Question[] = [
   q(9, "p06-s1", 3, "Un importador trae de São Paulo vasos fabricados en China. ¿Cómo se liquida?",
     ["Como extrazona: TGA del arancel y Tasa Consular 5%", "Con TGA 0% porque vienen de Brasil", "Con TGA 0% y Tasa Consular 0%", "Con la mitad de la TGA"], 0,
     "La preferencia es para mercadería originaria. Lo fabricado en China no cumple el régimen de origen MERCOSUR por pasar por Brasil, así que se liquida como extrazona."),
-  q(10, "p06-s1", 3, "Según el régimen de origen MERCOSUR, una mercadería con insumos no originarios que no cumple el salto de partida puede ser originaria si:",
-    ["Los insumos no originarios son menos del 10% del peso", "El valor CIF de los materiales no originarios no supera el 40% del valor FOB", "Se fabricó en una zona franca", "El exportador lo declara"], 1,
-    "El criterio general admite salto de partida o, si no, que el CIF de los materiales no originarios sea como máximo el 40% del FOB (≈ 60% de contenido regional). Los requisitos específicos por producto prevalecen."),
+  q(10, "p06-s1", 3, "Según el Régimen de Origen MERCOSUR vigente desde el 18/07/2024, una mercadería con insumos no originarios es originaria si:",
+    ["Los insumos no originarios son menos del 10% del peso", "Cumple el requisito específico que el Apéndice II fija para su NCM (cambio de clasificación, VMNO o proceso productivo)", "Se fabricó en una zona franca", "El exportador lo declara"], 1,
+    "El régimen vigente (Dec. CMC 05/23 y 06/23) tiene un único Apéndice II con el requisito de cada NCM; uno de los criterios es el VMNO, el valor CIF de los no originarios sobre el FOB (Uruguay: tope especial del 50% hasta 2032). El viejo criterio de “40% del FOB” era del régimen anterior. Lo hecho en zona franca no tiene preferencia."),
 
   // p06-s2: NCM, AEC, ACE 18, RGI
   q(11, "p06-s2", 1, "¿Cuántos dígitos tiene la NCM?",

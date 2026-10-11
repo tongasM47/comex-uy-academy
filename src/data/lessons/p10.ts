@@ -219,12 +219,12 @@ export const p10Lessons: Subtopic[] = [
           { type: "list", ordered: true, items: [
             "Productos totalmente obtenidos en el país (minerales, animales nacidos y criados, vegetales cosechados).",
             "Productos elaborados exclusivamente con materiales originarios.",
-            "Productos con insumos no originarios que cumplan el **salto de partida** (cambio de clasificación a 4 dígitos) o, si no lo cumplen, cuyo **valor CIF de materiales no originarios no supere el 40% del valor FOB**.",
-            "Requisitos específicos por producto, que prevalecen sobre los generales."
+            "Productos con insumos no originarios que cumplan el **requisito específico** que el Apéndice II del régimen vigente (desde el 18/07/2024) fija para su NCM: cambio de clasificación, **VMNO** (valor CIF de los no originarios sobre el FOB, con un tope especial del 50% para Uruguay hasta 2032) o proceso productivo.",
+            "Ojo con el material viejo: el régimen anterior pedía salto de partida o no originarios hasta el 40% del FOB. Ya no rige."
           ] },
           { type: "p", text: "Operaciones como embalar, fraccionar, mezclar, armar de forma simple o etiquetar **no confieren origen**." },
           { type: "eli5", text: "El certificado de origen es el **documento de identidad de la mercadería**. Demuestra que “nació” en el país, o que se transformó lo suficiente acá, para merecer el descuento. Ponerle una etiqueta uruguaya a un producto chino no le cambia la cédula." },
-          { type: "callout", tone: "warn", title: "A confirmar", text: "La validez de 180 días del certificado y el listado exacto de entidades emisoras (en Uruguay se mencionan la Cámara de Industrias, la Cámara Nacional de Comercio y Servicios y la Unión de Exportadores, habilitadas por el MEF) conviene confirmarlos con la entidad o en el MEF antes de darlos por seguros." }
+          { type: "callout", tone: "warn", title: "A confirmar", text: "Desde el 18/07/2024 el certificado MERCOSUR vale **12 meses** (ya no 180 días) y se emite dentro de los 180 días de la factura. El listado exacto de entidades emisoras (en Uruguay se mencionan la Cámara de Industrias, la Cámara Nacional de Comercio y Servicios y la Unión de Exportadores, habilitadas por el MEF) conviene confirmarlo con la entidad o en el MEF antes de darlos por seguros." }
         ]
       },
       {
@@ -268,7 +268,7 @@ export const p10Lessons: Subtopic[] = [
       "Ouro Preto (1994) le dio personalidad jurídica; Olivos (2002) creó el TPR en Asunción; Ushuaia (1998) es la cláusula democrática.",
       "La Secretaría y el PARLASUR están en Montevideo; Paraguay es depositario.",
       "NCM de 8 dígitos; AEC vigente desde el 1/1/1995 con excepciones nacionales.",
-      "Origen intrazona: totalmente obtenido, salto de partida o no originarios hasta 40% del FOB; el COD es obligatorio con Argentina y Brasil.",
+      "Origen intrazona: totalmente obtenido, solo materiales originarios o requisito específico del Apéndice II (VMNO; Uruguay 50% hasta 2032); el COD es obligatorio con Argentina y Brasil.",
       "Singapur vigente para Uruguay desde el 1/3/2026; UE en aplicación provisional desde el 1/5/2026; EFTA ratificado por Uruguay pero sin vigencia confirmada.",
       "Uruguay ejerce la Presidencia Pro Tempore desde el 30/06/2026 y avanza en la adhesión al CPTPP."
     ],
@@ -377,7 +377,7 @@ export const p10Lessons: Subtopic[] = [
             "**Formato digital**: el Certificado de Origen Digital (COD) se tramita con firma electrónica; con Argentina y Brasil es obligatorio."
           ] },
           { type: "example", title: "Exportar lácteos a Chile", text: "Una cooperativa de Florida exporta queso a Santiago. El certificado tiene que invocar el acuerdo que el importador chileno va a usar para pedir la preferencia (por ejemplo, el **ACE 35** o el **ACE 73**), con la clasificación y la norma de origen correctas. Si el certificado dice un acuerdo y el importador declara otro, la aduana chilena puede negar la preferencia." },
-          { type: "callout", tone: "warn", title: "Plazos del certificado", text: "La regla general de validez de 180 días y los plazos de emisión respecto del embarque varían según el acuerdo. Confirmalos con la entidad emisora o en el texto del ACE antes de embarcar." }
+          { type: "callout", tone: "warn", title: "Plazos del certificado", text: "En el MERCOSUR el certificado vale 12 meses y se emite dentro de los 180 días de la factura. En los demás acuerdos ALADI se cita una validez general de 180 días, pero ese dato y los plazos de emisión respecto del embarque varían según el acuerdo. Confirmalos con la entidad emisora o en el texto del ACE antes de embarcar." }
         ]
       },
       {

@@ -17,7 +17,7 @@ export const p06Flashcards: Flashcard[] = [
   f(3, "p06-s1", "Órganos decisorios y sus normas", "CMC → Decisiones; GMC → Resoluciones; CCM → Directivas."),
   f(4, "p06-s1", "Estados Partes del MERCOSUR", "Argentina, Brasil, Paraguay y Uruguay (fundadores); Bolivia (adhesión, 2024); Venezuela suspendida."),
   f(5, "p06-s1", "ACE 18", "Acuerdo de Complementación Económica N° 18 de la ALADI (29/11/1991): preferencia del 100% intra-MERCOSUR. Código 310 en el DUA."),
-  f(6, "p06-s1", "Criterios de origen MERCOSUR con insumos no originarios", "Salto de partida (4 dígitos SA) o CIF de materiales no originarios ≤ 40% del FOB; los requisitos específicos prevalecen."),
+  f(6, "p06-s1", "Criterios de origen MERCOSUR con insumos no originarios", "Desde el 18/07/2024: cumplir el requisito específico del Apéndice II para su NCM (cambio de clasificación, VMNO o proceso). Uruguay: VMNO hasta 50% hasta 2032. El “≤ 40% del FOB” era del régimen anterior (CMC 01/09)."),
   f(7, "p06-s1", "Prueba de origen MERCOSUR en LUCIA", "Certificado (ORIM), certificado digital COD (CODM) o declaración de origen con formato DORI-<nºfactura>-<AAMMDD> (RG 06/2025)."),
   // p06-s2
   f(8, "p06-s2", "Estructura del código de 10 dígitos", "6 del SA (capítulo, partida, subpartida) + 2 del MERCOSUR (ítem, subítem) + 2 de apertura nacional uruguaya."),

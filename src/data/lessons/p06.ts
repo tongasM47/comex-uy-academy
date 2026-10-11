@@ -189,16 +189,16 @@ export const p06Lessons: Subtopic[] = [
             rows: [
               ["Totalmente obtenido", "Minerales extraídos, animales nacidos y criados, vegetales cosechados en el país"],
               ["Elaborado con materiales originarios", "Todos los insumos son del bloque"],
-              ["Con materiales no originarios", "Salto de partida (cambio de clasificación a 4 dígitos del SA) o, si no lo cumple, valor CIF de los materiales no originarios ≤ 40% del valor FOB"],
-              ["Requisitos específicos", "Reglas propias por producto, que prevalecen sobre las generales"],
+              ["Con materiales no originarios", "Cumplir el **requisito específico** que el Apéndice II fija para su NCM: cambio de clasificación, **VMNO** (valor CIF de los materiales no originarios sobre el FOB del producto) o proceso productivo. Uruguay tiene un tope especial de VMNO del **50%** hasta el 31/12/2032"],
+              ["Antes del 18/07/2024", "El régimen anterior (Dec. CMC 01/09) pedía salto de partida o que los no originarios no superaran el 40% del FOB (≈ 60% de contenido regional). Lo vas a ver en material viejo"],
             ],
-            caption: "Criterios generales del régimen de origen intrazona (investigación 04, sección 3.6).",
+            caption: "Criterios del Régimen de Origen MERCOSUR vigente desde el 18/07/2024 (Dec. CMC 05/23 y 06/23). Detalle en el módulo 4.",
           },
           {
             type: "callout",
             tone: "warn",
             title: "Confirmar antes de usar",
-            text: "La investigación marca **[VERIFICAR]** la norma de origen vigente consolidada (Dec. CMC 01/04 y modificatorias), la **validez de 180 días** del certificado y el listado actual de **entidades emisoras** en Uruguay (Cámara de Industrias, Cámara Nacional de Comercio y Servicios, Unión de Exportadores). En una operación real, confirmalo con el despachante o la entidad emisora.",
+            text: "Con el régimen vigente el certificado vale **12 meses** desde su emisión y se emite dentro de los 180 días de la factura (antes valía 180 días). Lo que la investigación marca **[VERIFICAR]** es el tope **general** de VMNO (se cita 45%, pero las fuentes no coinciden) y si Uruguay ya habilitó la autocertificación. En una operación real, confirmá el requisito de la NCM en el Apéndice II con el despachante o la entidad emisora.",
           },
           {
             type: "callout",
