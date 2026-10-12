@@ -17,5 +17,5 @@ Los podcasts se generan en NotebookLM, en el cuaderno **"Comex UY - Podcasts"**.
 NotebookLM tiene un límite de uso que se reinicia periódicamente, y en cada ventana entran unos 4 audios.
 
 ## Estado
-- [x] p01-s1 … p06-s4 y p07-s1 … p07-s3
-- [ ] p06-s5 y p08-s1 … p12-s3 (18 restantes)
+- [x] p01-s1 … p08-s3 (módulos 1 a 8)
+- [ ] p09-s1 … p12-s3 (14 restantes)

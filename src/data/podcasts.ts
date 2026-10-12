@@ -8,6 +8,10 @@ export interface Podcast {
 }
 
 export const podcasts: Record<string, Podcast> = {
+  'p08-s3': { file: 'p08-s3.m4a', duration: '14 min' },
+  'p08-s2': { file: 'p08-s2.m4a', duration: '23 min' },
+  'p08-s1': { file: 'p08-s1.m4a', duration: '26 min' },
+  'p06-s5': { file: 'p06-s5.m4a', duration: '14 min' },
   'p07-s3': { file: 'p07-s3.m4a', duration: '18 min' },
   'p07-s2': { file: 'p07-s2.m4a', duration: '20 min' },
   'p07-s1': { file: 'p07-s1.m4a', duration: '18 min' },
